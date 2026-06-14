@@ -31,7 +31,7 @@ def scrape_and_download_images():
 
     for book in books:
         title = book.h3.a['title']
-        relative_img = book.find("img")["src"]
+        relative_img = book.find("img").get("src")
         img_url = urljoin(BASE_URL, relative_img)
         print(f"url - {img_url}")
 
