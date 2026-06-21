@@ -7,7 +7,7 @@ def rename_files_in_folder(folder_path,base_name,extension):
         return
     for i, file in enumerate(files,start=1):
         new_name=f"{base_name}_{i}{extension}"
-        print("{base_name}_{i}{extension}")
+        print(f"{base_name}_{i}{extension}")
     confirm=input("Are you ok wiht the name : Y/N : ").strip().lower()
     if confirm !='y':
         print("Cancel")
